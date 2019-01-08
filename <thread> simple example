@@ -1,0 +1,35 @@
+/*
+Tread Example 20190108_1750
+*/
+#include <windows.h> //for Sleep(100);
+#include <iostream>
+#include <ctime>
+#include <thread>
+
+using namespace std;
+
+
+void amy_speak()
+{
+    for(int i(0);i<15;i++)
+    {
+        cout<<"This is Amy"<<endl;
+        Sleep(98);
+    }
+}
+
+int main()
+{
+    thread mThread( amy_speak ); //Execute the thread
+
+    for(int i(0);i<15;i++)
+    {
+        cout<<"This is Kevin"<<endl;
+        Sleep(100);
+    }
+
+     mThread.join(); //End the thread
+
+    return 0;
+
+}
