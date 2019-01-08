@@ -1,13 +1,6 @@
 
 /*****************
-OpenCV Day 3
 20180712 Show a picture
-20180713 Read the value of the image, <image_element>
-20180716_1410 Binarization is finished
-20180716 Canny Edge Detection
-
-next make a function to present picture
-next Hough Line Transform and thresholding and image binarization
 *****************/
 #include <stdio.h>
 #include <cv.h>
