@@ -1,0 +1,69 @@
+
+/*****************
+OpenCV Day 3
+20180712 Show a picture
+20180713 Read the value of the image, <image_element>
+20180716_1410 Binarization is finished
+20180716 Canny Edge Detection
+
+next make a function to present picture
+next Hough Line Transform and thresholding and image binarization
+*****************/
+#include <stdio.h>
+#include <cv.h>
+#include <highgui.h>
+#include <iostream>
+
+#define hugo "hugo.jpg"
+#define lena "lena.jpg"
+#define test1 "test1.jpg"
+
+using namespace std;
+
+void show_a_picture(string picture_name,char image_number);
+
+
+int main()
+{
+    cout<<"Image Presentation"<<endl;
+    show_a_picture(lena,1);
+    return 0;
+}
+
+void show_a_picture(string picture_name,char image_number)
+{
+    //char picture_name_char=(char*)picture_name;
+    cout<<"Show Image: "<<picture_name<<endl;
+    char *file_name_char=(char*)picture_name.c_str();
+    //Image Structure
+    IplImage *Image1;
+/*
+    image_number:
+    CV_LOAD_IMAGE_UNCHANGED  =-1,
+    CV_LOAD_IMAGE_GRAYSCALE  =0,
+    CV_LOAD_IMAGE_COLOR      =1,
+    CV_LOAD_IMAGE_ANYDEPTH   =2,
+    CV_LOAD_IMAGE_ANYCOLOR   =4
+*/
+    //Load the image of picture
+    Image1 = cvLoadImage(file_name_char,image_number);
+    //Ddefine the window name, and argument i means set the size automatically
+    cvNamedWindow(file_name_char,0);
+    //The location of windows on the screen
+    cvMoveWindow(file_name_char,100,100);
+    //Resize the window on the screen
+    cvResizeWindow(file_name_char,300,400);
+
+    /*To find the name of window*/
+    //cvGetWindowHandle(file_name_char);
+    cvShowImage(file_name_char,Image1);
+
+    //Waiting for a keyboard event, or wait a time with N*0.001(s)
+    cvWaitKey(0);
+
+    //Close the window of image
+    cvDestroyWindow("Show Image");
+
+    //Release the memory of image structure
+    cvReleaseImage(&Image1);
+}
