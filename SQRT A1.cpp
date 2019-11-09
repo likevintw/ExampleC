@@ -24,7 +24,7 @@ double sqrt_Iterative(double input_value)
         //The acccuracy of reslut
         if (check_value<0.01) //the accuracy of result
         {
-            printf("%.2lf , result_value=%f\n", input_value, result_value); // check the each delt_value
+            printf("Root Square %.2lf is %.2lf\n", input_value, result_value); // check the each delt_value
             return result_value;
             //break;
         }
