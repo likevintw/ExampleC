@@ -9,9 +9,9 @@
 int main()
 {
 	clock_t t1, t2;
-	t1 = clock();
+	t1 = clock();  //Time of Start
 	Sleep(1234);
-	t2 = clock();
+	t2 = clock();  //Time of End
 	printf("%lf\n Second", (t2 - t1) / (double)(CLOCKS_PER_SEC));
 	return 0;
 }

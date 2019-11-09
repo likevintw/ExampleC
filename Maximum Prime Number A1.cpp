@@ -1,16 +1,6 @@
 #include <iostream>
 
 using namespace std;
-int max_prime_num(int num);
-int main()
-{
-    int export_data(0);
-    int keyin_num(0);
-    cin>>keyin_num;
-    export_data=max_prime_num(keyin_num);
-    cout << export_data << endl;
-    return 0;
-}
 int max_prime_num(int input_num)
 {
     int N(0);
@@ -43,3 +33,15 @@ int max_prime_num(int input_num)
     }
     return max_prime;
 }
+int main()
+{
+    int export_data(0);
+    int keyin_num(0);
+    cout<<"Please Enter a Real Number\n";
+    cin>>keyin_num;
+    cout<<"The Enter Number is "<<keyin_num<<endl;;
+    export_data=max_prime_num(keyin_num);
+    cout <<"The Maximum Prime Number is "<< export_data << endl;
+    return 0;
+}
+
