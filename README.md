@@ -6,6 +6,7 @@ Class Structor and Destructrue <br>
 Class Structor and Destructrue2 <br>
 Class Virtual Inheritance<br>
 Clock<br>
+Enumerate<br>
 Maximum Prime Number <br>
 Printf<br>
 Square Root<br>
@@ -14,7 +15,7 @@ Windows Thread <br>
 Bubble Sorting with Linked List<br>
 Bubble Sorting with Array<br>
 Argument Passing <br>
-Overloading<br>
+Overload and Override<br>
 <ul>
 <li> Call by Value, doesn't change values, but need to copy data
 <li> Call by Address, change values, doesn't copy data
@@ -28,7 +29,7 @@ malloc and free <br>
 </ul>
 <hr>
 <h3>Unfinished</h3>
-Override<br>
+
 Encapsulation 封裝<br>
 polymorphism 多型<br>
 
