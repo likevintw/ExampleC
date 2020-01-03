@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 <h2>C++ Basic Example</h2>
 <h3>Finished</h3>
 Class<br>
@@ -70,4 +70,4 @@ malloc and free <br>
 Encapsulation 封裝<br>
 polymorphism 多型<br>
 
->>>>>>> 0959bd469e5d0d840713febed7b5998132fc4b5f
+
