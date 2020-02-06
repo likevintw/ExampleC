@@ -2,10 +2,11 @@
 <h2>C++ Basic Example</h2>
 <h3>Finished</h3>
 Class<br>
-Class Inheritance<br>
-Class Structor and Destructrue <br>
-Class Structor and Destructrue2 <br>
-Class Virtual Inheritance<br>
+<ul>
+<li> Class, Attribute and Method
+<li> Class Structor and Destructrue
+<li> Inheritance
+</ul>
 Clock<br>
 Enumerate<br>
 Maximum Prime Number <br>
