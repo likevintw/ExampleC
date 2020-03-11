@@ -71,10 +71,11 @@
 
 <hr>
 <h3>Unfinished</h3>
-
-
-polymorphism 多型<br>
-
+To updated operator Overloading
+Reference Counting
+File RW
+Linux Dynamic and Static libaray
+Linux Server Client Socket
 
 
 
