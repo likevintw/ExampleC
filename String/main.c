@@ -138,10 +138,31 @@ void Example_String(void)
 	//printf("Result: strPoint: %s\n", strPoint.c_str()); // error
 	delete strPoint;
 }
+
+// function, string pointer in, string pointer out
+string* StringPointerIO(string* input)
+{
+	return input;
+}
+void Example_StringPointerIO(void)
+{
+	// integer pointer
+	int* intPointer = new int;
+	*intPointer = 99;
+	printf("intPointer Value = %d\n", *intPointer);
+	printf("intPointer Address = %p\n", &intPointer);
+
+	// String pointer
+	string* inputPointer = new string();
+	*inputPointer = "Hello";
+	printf("ServerAlgorithm(), InputData: %s\n", inputPointer->c_str()); // not .c_str()
+}
+
 int main()
 {
 	Example_StringDislocate_2Dot();
 	Example_StringDislocate();
 	Example_String();
+	Example_StringPointerIO();
 	return 0;
 }

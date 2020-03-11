@@ -29,7 +29,7 @@
 <li> Example_StringDislocate_2Dot()
 <li> Example_StringDislocate()
 <li> Example_String()
-<li> String and char, Unfinished
+<li> Example_StringPointer(), the comparison of char, int, string pointers
 </ul>
 
 <h4> Timer </h4>
