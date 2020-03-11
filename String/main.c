@@ -139,23 +139,32 @@ void Example_String(void)
 	delete strPoint;
 }
 
-// function, string pointer in, string pointer out
-string* StringPointerIO(string* input)
+// string pointer
+void Example_StringPointer(void)
 {
-	return input;
-}
-void Example_StringPointerIO(void)
-{
+	printf("\nExample_StringPointer()\n");
 	// integer pointer
 	int* intPointer = new int;
 	*intPointer = 99;
 	printf("intPointer Value = %d\n", *intPointer);
 	printf("intPointer Address = %p\n", &intPointer);
-
+	printf("\n");
+	// character pointer
+	char charBuffer[] = "Good";
+	char* charPointer = new char;
+	//*charPointer = "Good"; // Error
+	charPointer = charBuffer;
+	//printf("charPointer Value = %c\n", *charPointer); // print "G"
+	//printf("charPointer Value = %s\n", *charPointer); // Error, memory crash
+	printf("charPointer Value = %s\n", charPointer);
+	printf("charPointer Address = %p\n", &charPointer);
+	printf("\n");
 	// String pointer
-	string* inputPointer = new string();
-	*inputPointer = "Hello";
-	printf("ServerAlgorithm(), InputData: %s\n", inputPointer->c_str()); // not .c_str()
+	string* stringPointer = new string(); // not new string;
+	*stringPointer = "Hello";
+	printf("stringPointer: %s\n", stringPointer->c_str()); // not .c_str()
+	//printf("stringPointer: %s\n", *stringPointer); // Will show wrong data
+	printf("stringPointer: %p\n", &stringPointer);
 }
 
 int main()
@@ -163,6 +172,6 @@ int main()
 	Example_StringDislocate_2Dot();
 	Example_StringDislocate();
 	Example_String();
-	Example_StringPointerIO();
+	Example_StringPointer();
 	return 0;
 }
