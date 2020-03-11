@@ -1,5 +1,20 @@
 
 <h2>C++ Basic Example</h2>
+
+<h4>String</h4>
+<ul>
+<li> Example_StringDislocate_2Dot()
+<li> Example_StringDislocate()
+<li> Example_String()
+<li> String and char, Unfinished
+</ul>
+
+<h4> Timer </h4>
+<ul>
+<li> Example_clock()
+<li> Example_gettimeofday() >> mush better
+</ul>
+
 <h4>Pointer</h4>
 <ul>
 <li> Calling countering, Unfinished
@@ -8,6 +23,12 @@
 <li> Example_ValueAddress()
 <li> OneDimensionArray()
 <li> TwoDimentionArray()
+</ul>
+
+<h4>Gtest</h4>
+<ul>
+<li> Test Function Max()
+<li> Test Function Sum()
 </ul>
 
 <hr>

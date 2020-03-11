@@ -5,7 +5,7 @@
 #include<string.h> //strlen()
 
 using namespace std;
-// Case 1
+// String Dislocate Case 1
 string *StringDislocate_2Dots(string inputData)
 {
 	int len = inputData.size();
@@ -42,8 +42,20 @@ string *StringDislocate_2Dots(string inputData)
 	//printf("A:%s  B:%s\n", result[0].c_str(), result[1].c_str());
 	return result;
 }
+void Example_StringDislocate_2Dot(void)
+{
+	printf("\nExample_StringDislocate_2Dot()\n");
+	string strA = "Hello,World";
+	printf("Input: %s\n", strA.c_str());
+	printf("Output: %s\n", StringDislocate_2Dots(strA)[0].c_str());
+	printf("Output: %s\n", StringDislocate_2Dots(strA)[1].c_str());
+	strA = "r,123";
+	printf("Input: %s\n", strA.c_str());
+	printf("Output: %s\n", StringDislocate_2Dots(strA)[0].c_str());
+	printf("Output: %s\n", StringDislocate_2Dots(strA)[1].c_str());
+}
 
-// Case 2
+// String Dislocate Case 2
 struct LinkList
 {
 	string StringInfo;
@@ -85,38 +97,51 @@ LinkList* StringDislocate(string inputData)
 	}
 
 	// Show all the location of dots
-	/**/
+	/*
 	printf("Result\n");
 	lastNode = headNode;
 	while (lastNode)
 	{
 		printf("%s\n", lastNode->StringInfo.c_str());
 		lastNode = lastNode->node;
-	}
+	}*/
 	
 	return headNode;
 }
-int main()
+void Example_StringDislocate(void)
 {
-	// Case 1
-	/**/
-	printf("String Dislocation\n");
-	string strA = "Hello,World";
-	printf("%s\n", strA.c_str());
-	printf("%s %s\n", StringDislocate_2Dots(strA)[0].c_str(), StringDislocate_2Dots(strA)[1].c_str());
-	strA = "r,123";
-	printf("%s\n", strA.c_str());
-	printf("%s %s\n", StringDislocate_2Dots(strA)[0].c_str(), StringDislocate_2Dots(strA)[1].c_str());
-	
-
-	// Case 2
+	printf("\nExample_StringDislocate()\n");
 	LinkList* Result;
-	Result=StringDislocate("Hello,World,Yo");
+	Result = StringDislocate("Hello,World,Yo");
+	printf("Output:\n");
 	while (Result)
 	{
 		printf("%s\n", Result->StringInfo.c_str());
 		Result = Result->node;
 	}
+}
 
+// String Example
+void Example_String(void)
+{
+	printf("\nExample_String()\n");
+	string str1, str2;
+	str1 = "Hello";
+	str1 = str1 + " ";
+	str2 = "World";
+	str2 = str1 + str2;
+
+	string* strPoint = new string("Test");
+	//string* strPoint = str2;
+	printf("Result: str2: %s\n", str2.c_str());
+	printf("Result: strPoint: %s\n", strPoint->c_str());
+	//printf("Result: strPoint: %s\n", strPoint.c_str()); // error
+	delete strPoint;
+}
+int main()
+{
+	Example_StringDislocate_2Dot();
+	Example_StringDislocate();
+	Example_String();
 	return 0;
 }
