@@ -1,6 +1,13 @@
 
 <h2>C++ Basic Example</h2>
 
+<h4>Function</h4>
+<ul>
+<li> FunctionPointerA()
+<li> FunctionPointerB()
+<li> CallbackFunction()
+<li> CallbackFunctionTypedef(), callback function with typedef
+</ul>
 
 <h4>Memory, new, alloc, realloc</h4>
 <ul>

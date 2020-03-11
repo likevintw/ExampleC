@@ -142,6 +142,7 @@ void Example_realloc(void)
 
 	free(str);
 }
+
 int main()
 {
 	//Example_pointer();
