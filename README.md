@@ -1,39 +1,59 @@
 
 <h2>C++ Basic Example</h2>
-<h3>Finished</h3>
-Class<br>
+
+
+<h4>Memory, new, alloc, realloc</h4>
 <ul>
-<li> Class, Attribute and Method
-<li> Class Structor and Destructrue
-<li> Inheritance
-</ul>
-Clock<br>
-Enumerate<br>
-Maximum Prime Number <br>
-Printf<br>
-Square Root<br>
-Vector <br>
-Windows Thread <br>
-Bubble Sorting with Linked List<br>
-Bubble Sorting with Array<br>
-Argument Passing <br>
-Overload and Override<br>
-<ul>
-<li> Call by Value, doesn't change values, but need to copy data
-<li> Call by Address, change values, doesn't copy data
-<li> Call by Reference, change values, doesn't copy data
+<li> Example_pointer()
+<li> Example_new()
+<li> Example_malloc()
+<li> Example_realloc()
 </ul>
 
-malloc and free <br>
+<h4>Character</h4>
 <ul>
-<li> malloc a space to pointer
-<li> free a pointer
+<li> Example_charConbine(), char = char + char
+<li> SizeOfChar(), size of a character
 </ul>
+
+
+<h4>String</h4>
+<ul>
+<li> Example_StringDislocate_2Dot()
+<li> Example_StringDislocate()
+<li> Example_String()
+<li> String and char, Unfinished
+</ul>
+
+<h4> Timer </h4>
+<ul>
+<li> Example_clock()
+<li> Example_gettimeofday() >> mush better
+</ul>
+
+<h4>Pointer</h4>
+<ul>
+<li> Calling countering, Unfinished
+<li> Example_StringPointer()
+<li> Example_SmartPointer()
+<li> Example_ValueAddress()
+<li> OneDimensionArray()
+<li> TwoDimentionArray()
+</ul>
+
+<h4>Gtest</h4>
+<ul>
+<li> Test Function Max()
+<li> Test Function Sum()
+</ul>
+
 <hr>
 <h3>Unfinished</h3>
 
 Encapsulation 封裝<br>
 polymorphism 多型<br>
+
+
 
 
 
