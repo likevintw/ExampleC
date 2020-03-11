@@ -1,6 +1,15 @@
 
 <h2>C++ Basic Example</h2>
 
+
+<h4>Memory, new, alloc, realloc</h4>
+<ul>
+<li> Example_pointer()
+<li> Example_new()
+<li> Example_malloc()
+<li> Example_realloc()
+</ul>
+
 <h4>Character</h4>
 <ul>
 <li> Example_charConbine(), char = char + char
