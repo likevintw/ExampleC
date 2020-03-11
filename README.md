@@ -1,6 +1,13 @@
 
 <h2>C++ Basic Example</h2>
 
+<h4>Character</h4>
+<ul>
+<li> Example_charConbine(), char = char + char
+<li> SizeOfChar(), size of a character
+</ul>
+
+
 <h4>String</h4>
 <ul>
 <li> Example_StringDislocate_2Dot()
