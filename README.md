@@ -71,11 +71,11 @@
 
 <hr>
 <h3>Unfinished</h3>
-To updated operator Overloading
-Reference Counting
-File RW
-Linux Dynamic and Static libaray
-Linux Server Client Socket
+To updated operator Overloading<br>
+Reference Counting<br>
+File RW<br>
+Linux Dynamic and Static libaray<br>
+Linux Server Client Socket<br>
 
 
 
