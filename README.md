@@ -26,10 +26,10 @@
 
 <h4>Memory, new, alloc, realloc</h4>
 <ul>
-<li> Example_new_value();
-<li> Example_new_array();
-<li> Example_malloc_value();
-<li> Example_malloc_array();
+<li> Example_new_value(); 202003121658 Updated
+<li> Example_new_array(); 202003121658 Updated
+<li> Example_malloc_value(); 202003121658 Updated
+<li> Example_malloc_array(); 202003121658 Updated
 <li> Example_realloc();
 </ul>
 
