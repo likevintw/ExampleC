@@ -26,10 +26,11 @@
 
 <h4>Memory, new, alloc, realloc</h4>
 <ul>
-<li> Example_pointer()
-<li> Example_new()
-<li> Example_malloc()
-<li> Example_realloc()
+<li> Example_new_value();
+<li> Example_new_array();
+<li> Example_malloc_value();
+<li> Example_malloc_array();
+<li> Example_realloc();
 </ul>
 
 <h4>Character</h4>
