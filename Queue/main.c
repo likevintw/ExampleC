@@ -14,6 +14,9 @@ using namespace std;
 class QueueApplication
 {
 public:
+	string Keyword_catch;
+	string Keyword_exit;
+	string Keyword_number;
 	struct LinkedList
 	{
 		string LinkedListData;
@@ -27,6 +30,9 @@ public:
 };
 QueueApplication::QueueApplication()
 {
+	Keyword_catch = "catch";
+	Keyword_exit = "exit";
+	Keyword_number = "number";
 	headNode = NULL;
 	lastNode = NULL;
 	DataNumber = 0;
@@ -42,7 +48,7 @@ string QueueApplication::Queue(string inputData)
 {
 	string result;
 	// Show the Data Number
-	if (inputData == "Number")
+	if (inputData == Keyword_number.c_str())
 	{
 		if (headNode == NULL)
 		{
@@ -57,7 +63,7 @@ string QueueApplication::Queue(string inputData)
 	}
 	
 	//
-	if (inputData == "Catch")
+	if (inputData == Keyword_catch.c_str())
 	{
 		if (headNode == NULL)
 		{
@@ -65,8 +71,12 @@ string QueueApplication::Queue(string inputData)
 		}
 		else
 		{
-			result = headNode->LinkedListData;
+			LinkedList* BufferNode;
+			BufferNode = headNode;
 			headNode = headNode->LinkedListnode;
+			result = BufferNode->LinkedListData;
+			BufferNode = NULL;
+			delete BufferNode;
 			--DataNumber;
 			
 		}
@@ -100,8 +110,17 @@ int main()
 	char keyin[20];
 	while (1)
 	{
-		scanf("%10s", keyin); // the maximium input is 10 charaters.
-		printf("%s\n", A.Queue(keyin).c_str());
+		//scanf("%10s", keyin); // the maximium input is 10 charaters.
+		scanf("%s", keyin); // the maximium input is 10 charaters.
+		if (!A.Keyword_exit.find(keyin))
+		{
+			printf("Queue End\n");
+			break;
+		}
+		else
+		{
+			printf("%s\n", A.Queue(keyin).c_str());
+		}
 		usleep(100);
 	}
 	return 0;

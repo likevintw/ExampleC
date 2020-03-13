@@ -138,10 +138,61 @@ void Example_String(void)
 	//printf("Result: strPoint: %s\n", strPoint.c_str()); // error
 	delete strPoint;
 }
+
+// string pointer
+void Example_StringPointer(void)
+{
+	printf("\nExample_StringPointer()\n");
+	// integer pointer
+	int* intPointer = new int;
+	*intPointer = 99;
+	printf("intPointer Value = %d\n", *intPointer);
+	printf("intPointer Address = %p\n", &intPointer);
+	printf("\n");
+	// character pointer
+	char charBuffer[] = "Good";
+	char* charPointer = new char;
+	//*charPointer = "Good"; // Error
+	charPointer = charBuffer;
+	//printf("charPointer Value = %c\n", *charPointer); // print "G"
+	//printf("charPointer Value = %s\n", *charPointer); // Error, memory crash
+	printf("charPointer Value = %s\n", charPointer);
+	printf("charPointer Address = %p\n", &charPointer);
+	printf("\n");
+	// String pointer
+	string* stringPointer = new string(); // not new string;
+	*stringPointer = "Hello";
+	printf("stringPointer: %s\n", stringPointer->c_str()); // not .c_str()
+	//printf("stringPointer: %s\n", *stringPointer); // Will show wrong data
+	printf("stringPointer: %p\n", &stringPointer);
+}
+
+// string Comparison
+void stringComparison(void)
+{
+	printf("\nstringComparison()\n");
+	string A, B;
+	A = "A";
+	B = "B";
+	if (!A.find(B)) printf("string, %s is the some of %s\n", A.c_str(), B.c_str());
+	else printf("string, %s is NOT the some of %s\n", A.c_str(), B.c_str());
+	A = "B";
+	if (!A.find(B)) printf("string, %s is the some of %s\n", A.c_str(), B.c_str());
+	else printf("string, %s is NOT the some of %s\n", A.c_str(), B.c_str());
+
+}
+
 int main()
 {
+	/*
 	Example_StringDislocate_2Dot();
 	Example_StringDislocate();
-	Example_String();
+	Example_String(); //str+str
+	stringComparison();
+	Example_StringPointer();
+	*/
+
+	stringComparison();
+
 	return 0;
 }

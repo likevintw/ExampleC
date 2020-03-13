@@ -1,13 +1,49 @@
 
 <h2>C++ Basic Example</h2>
 
+<h4>Pring</h4>
+<ul>
+<li> 202003131737 Updated
+</ul>
+
+<h4>Queue</h4>
+<ul>
+<li> enter string to add a datum in to queue
+<li> enter "catch" to get datum
+<li> enter "number" to get the number of queue
+<li> enter "exit" to exit the queue
+</ul>
+
+<h4>Class</h4>
+<ul>
+<li> Structor and Destructrue()
+<li> SinglInheritance()
+<li> MutipleInheritance()
+<li> VirtualInheriance()
+<li> RepeatInheritance()
+<li> AttributeAndMethod()
+<li> Example_Encapsulation()
+<li> Example_Override()
+<li> Example_Overload(), Static polymorphism
+<li> Example_polymorphism (), Dynamic polymorphism
+</ul>
+
+<h4>Function</h4>
+<ul>
+<li> FunctionPointerA()
+<li> FunctionPointerB()
+<li> CallbackFunction()
+<li> CallbackFunctionTypedef(), callback function with typedef
+<li> ArgumentPassing(), call_by_value, call_by_adress, call_by_reference
+</ul>
 
 <h4>Memory, new, alloc, realloc</h4>
 <ul>
-<li> Example_pointer()
-<li> Example_new()
-<li> Example_malloc()
-<li> Example_realloc()
+<li> Example_new_value(); 202003121658 Updated
+<li> Example_new_array(); 202003121658 Updated
+<li> Example_malloc_value(); 202003121658 Updated
+<li> Example_malloc_array(); 202003121658 Updated
+<li> Example_realloc();
 </ul>
 
 <h4>Character</h4>
@@ -21,8 +57,9 @@
 <ul>
 <li> Example_StringDislocate_2Dot()
 <li> Example_StringDislocate()
-<li> Example_String()
-<li> String and char, Unfinished
+<li> Example_String() //str+str
+<li> stringComparison(); //str.find()
+<li> Example_StringPointer(), the comparison of char, int, string pointers
 </ul>
 
 <h4> Timer </h4>
@@ -49,10 +86,20 @@
 
 <hr>
 <h3>Unfinished</h3>
-
-Encapsulation 封裝<br>
-polymorphism 多型<br>
-
+Reference Counting<br>
+<br>
+File RW<br>
+<br>
+left and right reference<br>
+<br>
+Linux Dynamic and Static libaray<br>
+<br>
+Linux Server Client Socket<br>
+<br>
+Binary Tree<br>
+BinaryTree("Data");<br>
+BinaryTree("Show");<br>
+<br>
 
 
 

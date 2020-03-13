@@ -1,0 +1,3 @@
+﻿  test.cpp
+C:\Users\Leedarson\Desktop\workingspace\GTest\GTest\test.cpp(63): warning C4715: 'Testing': 不是所有控制路徑都傳回值
+  GTest.vcxproj -> C:\Users\Leedarson\Desktop\workingspace\GTest\Debug\GTest.exe
