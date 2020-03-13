@@ -85,6 +85,8 @@ Reference Counting<br>
 <br>
 File RW<br>
 <br>
+left and right reference<br>
+<br>
 Linux Dynamic and Static libaray<br>
 <br>
 Linux Server Client Socket<br>
