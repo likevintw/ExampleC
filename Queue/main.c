@@ -14,6 +14,9 @@ using namespace std;
 class QueueApplication
 {
 public:
+	string Keywor_catch = "catch";
+	string Keywor_exit = "exit";
+	string Keywor_number = "number";
 	struct LinkedList
 	{
 		string LinkedListData;
@@ -37,12 +40,13 @@ QueueApplication::~QueueApplication()
 	headNode = NULL;
 	delete lastNode;
 	delete headNode;
+	delete BufferNode;
 }
 string QueueApplication::Queue(string inputData)
 {
 	string result;
 	// Show the Data Number
-	if (inputData == "Number")
+	if (inputData == Keywor_number.c_str())
 	{
 		if (headNode == NULL)
 		{
@@ -65,8 +69,12 @@ string QueueApplication::Queue(string inputData)
 		}
 		else
 		{
-			result = headNode->LinkedListData;
+			LinkedList* BufferNode;
+			BufferNode = headNode;
 			headNode = headNode->LinkedListnode;
+			result = BufferNode->LinkedListData;
+			BufferNode = NULL;
+			delete BufferNode;
 			--DataNumber;
 			
 		}
@@ -100,7 +108,9 @@ int main()
 	char keyin[20];
 	while (1)
 	{
-		scanf("%10s", keyin); // the maximium input is 10 charaters.
+		//scanf("%10s", keyin); // the maximium input is 10 charaters.
+		scanf("%s", keyin); // the maximium input is 10 charaters.
+		if (A.Queue(keyin).c_str() == "exit");
 		printf("%s\n", A.Queue(keyin).c_str());
 		usleep(100);
 	}

@@ -72,11 +72,18 @@
 
 <hr>
 <h3>Unfinished</h3>
-To updated operator Overloading<br>
 Reference Counting<br>
+<br>
 File RW<br>
+<br>
 Linux Dynamic and Static libaray<br>
+<br>
 Linux Server Client Socket<br>
+<br>
+Binary Tree<br>
+BinaryTree("Data");<br>
+BinaryTree("Show");<br>
+<br>
 
 
 
