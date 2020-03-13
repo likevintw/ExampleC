@@ -1,6 +1,14 @@
 
 <h2>C++ Basic Example</h2>
 
+<h4>Queue</h4>
+<ul>
+<li> enter string to add a datum in to queue
+<li> enter "catch" to get datum
+<li> enter "number" to get the number of queue
+<li> enter "exit" to exit the queue
+</ul>
+
 <h4>Class</h4>
 <ul>
 <li> Structor and Destructrue()
