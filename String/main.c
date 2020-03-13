@@ -167,11 +167,32 @@ void Example_StringPointer(void)
 	printf("stringPointer: %p\n", &stringPointer);
 }
 
+// string Comparison
+void stringComparison(void)
+{
+	printf("\nstringComparison()\n");
+	string A, B;
+	A = "A";
+	B = "B";
+	if (!A.find(B)) printf("string, %s is the some of %s\n", A.c_str(), B.c_str());
+	else printf("string, %s is NOT the some of %s\n", A.c_str(), B.c_str());
+	A = "B";
+	if (!A.find(B)) printf("string, %s is the some of %s\n", A.c_str(), B.c_str());
+	else printf("string, %s is NOT the some of %s\n", A.c_str(), B.c_str());
+
+}
+
 int main()
 {
+	/*
 	Example_StringDislocate_2Dot();
 	Example_StringDislocate();
-	Example_String();
+	Example_String(); //str+str
+	stringComparison();
 	Example_StringPointer();
+	*/
+
+	stringComparison();
+
 	return 0;
 }

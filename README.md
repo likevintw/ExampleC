@@ -52,7 +52,8 @@
 <ul>
 <li> Example_StringDislocate_2Dot()
 <li> Example_StringDislocate()
-<li> Example_String()
+<li> Example_String() //str+str
+<li> stringComparison(); //str.find()
 <li> Example_StringPointer(), the comparison of char, int, string pointers
 </ul>
 
