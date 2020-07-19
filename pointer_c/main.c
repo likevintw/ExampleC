@@ -23,11 +23,15 @@ void example_record()
 	free(ptr_one);
 }
 
-void example_basic()
+void example_malloc_free()
 {
 	int size = 10;
     int *int_pointer = malloc(size * sizeof(int));
-
+	if(int_pointer == NULL)
+    {
+        printf("Error! memory not allocated.");
+        exit(0);
+    }
     for(int i = 0; i < size; i++) 
 	{
 		int_pointer[i] = i;
@@ -37,9 +41,58 @@ void example_basic()
     free(int_pointer);
 }
 
+void example_calloc_free()
+{
+	int n, i, *ptr, sum = 0;
+
+    ptr = (int*) calloc(n, sizeof(int));
+    if(ptr == NULL)
+    {
+        printf("Error! memory not allocated.");
+        exit(0);
+    }
+
+    for(i = 0; i < n; ++i)
+    {
+		ptr[i] = i;
+		printf("%d\n", *(ptr + i));
+    }
+    free(ptr);
+}
+
+void example_realloc()
+{
+	int *ptr, i , n1, n2;
+	n1 = 5;
+	n2 = 10;
+
+    ptr = (int*) malloc(n1 * sizeof(int));
+
+    printf("Addresses of previously allocated memory: \n");
+    for(i = 0; i < n1; ++i)
+	{
+		ptr[i] = i;
+		printf("[%d]:%d, %p\n", i, ptr[i], ptr + i);
+	}
+
+    // rellocating the memory
+    ptr = realloc(ptr, n2 * sizeof(int));
+
+    printf("Addresses of newly allocated memory: \n");
+    for(i = 0; i < n2; ++i)
+	{
+		ptr[i] = i;
+		printf("[%d]:%d, %p\n", i, ptr[i], ptr + i);
+	}
+  
+    free(ptr);
+}
+
 int main()
 {
 	//example_record();
-	example_basic();
+	//example_malloc_free();
+	//example_calloc_free();
+	example_realloc();
 	return 0;
 }
