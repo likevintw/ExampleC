@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "xstring": "c",
+        "vector": "c",
+        "list": "c"
+    }
+}
